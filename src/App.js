@@ -106,7 +106,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Halloween Decoration Suggestions Based on Weather</h1>
+      <h1>Halloween Decoration and Costume Suggestions Based on Weather</h1>
       
       {/* Form to input the city name */}
       <form onSubmit={handleSubmit}>

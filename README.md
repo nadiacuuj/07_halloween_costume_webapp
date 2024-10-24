@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Halloween Decoration/Costume Suggestions Based on Weather
 
-In this assignment, I’ve created a web application using React to solve the semi-regular (or to be more specific, annual) challenge of choosing a Halloween costume and decorations that suit both the fun spirit of the holiday and the unpredictable weather. By suggesting costume ideas based on the user’s inputted city's weather condition ((e.g., winter costumes for colder temperatures)). This app provides a creative, practical, and timely solution to a problem many face each year as Halloween approaches.
+For this assignment, I’ve created a web application using React to tackle the semi-regular (or more accurately, annual) challenge of choosing Halloween costumes and decorations that fit both the festive spirit and the unpredictable weather. Living in a place like New York City the past few months has shown just how wildly the weather can fluctuate around Halloween. One day everyone is in puffers, and the next I'm sweating buckets through my t-shirt. This app provides costume and decoration suggestions based on the weather in the user’s city, helping them select outfits and festive décor that are both fun and practical. It’s a creative, timely, and useful solution to a problem that many face every year as Halloween approaches.
 
 ## Features
 
