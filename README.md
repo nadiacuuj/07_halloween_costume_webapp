@@ -1,70 +1,72 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this assignment, I’ve created a web application using React to solve the semi-regular (or to be more specific, annual) challenge of choosing a Halloween costume and decorations that suit both the fun spirit of the holiday and the unpredictable weather. By suggesting costume ideas based on the user’s inputted city's weather condition ((e.g., winter costumes for colder temperatures)). This app provides a creative, practical, and timely solution to a problem many face each year as Halloween approaches.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetches current weather data for the entered city using the OpenWeatherMap API.
+- Generates costume/decoration images using the Unsplash API, that match the temperature and specific weather conditions like rain, snow, or heat.
+- Simple error handling for invalid cities or issues fetching data.
 
-### `npm start`
+## Installation and Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- Node.js installed on your machine.
+- API keys from OpenWeatherMap and Unsplash to access weather and image data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Steps:
 
-### `npm test`
+1. Clone this repository to your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/nadiacuuj/07_halloween_costume_webapp.git
+cd halloween-costume-webapp
+```
 
-### `npm run build`
+2. Install the necessary dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Create a .env file in the project root and add your API keys like this:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+REACT_APP_OPENWEATHER_KEY = your_openweather_api_key
+REACT_APP_UNSPLASH_ACCESS_KEY = your_unsplash_api_key
+```
 
-### `npm run eject`
+4. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. The app will be running on http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React.js for the frontend framework.
+- Axios for making HTTP requests to external APIs.
+- OpenWeatherMap API for weather data.
+- Unsplash API for fetching costume images.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Error Handling
 
-### Code Splitting
+The project includes basic error handling, such as:
+- Displaying an error message if the city entered cannot be found.
+- Handling API rate limit errors from OpenWeatherMap.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Credits for AI-Generated Code
 
-### Analyzing the Bundle Size
+This project was developed with valuable support from AI tools, particularly ChatGPT, in the following areas:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Structuring the integration and handling of API requests, including managing weather data and costume suggestions.
+- Crafting dynamic queries for costume recommendations based on specific weather conditions.
+- Offering guidance on error handling, debugging, and best practices for improving the code's robustness.
+- Providing detailed explanations and comments throughout the code to ensure clarity and maintainability.
 
-### Making a Progressive Web App
+While AI assistance greatly enhanced the development process and expedited certain tasks, all key decisions, final code adjustments, and logic implementations were handled manually.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
