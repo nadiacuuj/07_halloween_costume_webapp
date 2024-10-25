@@ -5,8 +5,8 @@ For this assignment, I’ve created a web application using React to tackle the 
 ## Features
 
 - Fetches current weather data for the entered city using the OpenWeatherMap API.
-- Generates costume/decoration images using the Unsplash API, that match the temperature and specific weather conditions like rain, snow, or heat.
-- Simple error handling for invalid cities or issues fetching data.
+- Generates costume/decoration images using the Unsplash API, matched to temperature and specific weather conditions like rain, snow, or heat.
+- Basic error handling for invalid cities or issues with data fetching.
 
 ## Installation and Setup
 
@@ -40,10 +40,9 @@ REACT_APP_UNSPLASH_ACCESS_KEY = your_unsplash_api_key
 
 ```bash
 npm start
-
 ```
 
-5. The app will be running on http://localhost:3000.
+5. The app will run on http://localhost:3000.
 
 
 ## Technologies Used
@@ -61,12 +60,10 @@ The project includes basic error handling, such as:
 
 ## Credits for AI-Generated Code
 
-This project was developed with valuable support from AI tools, particularly ChatGPT, in the following areas:
+This project was developed with valuable support from AI tools, particularly ChatGPT, in the following ways:
 
-- Structuring the integration and handling of API requests, including managing weather data and costume suggestions.
-- Crafting dynamic queries for costume recommendations based on specific weather conditions.
-- Offering guidance on error handling, debugging, and best practices for improving the code's robustness.
-- Providing detailed explanations and comments throughout the code to ensure clarity and maintainability.
+- **Initial Component Structure and API Integration Drafts:** AI provided an initial draft for the component structure and API integration, including setting up the weather data retrieval and costume suggestion functionality. However, although it gave me a very solid layout/general order, the draft also gave me error after error, so I had to manually debug these issues (with the help of more AI) to get the code working correctly.
 
-While AI assistance greatly enhanced the development process and expedited certain tasks, all key decisions, final code adjustments, and logic implementations were handled manually.
+- **Manual Debugging and Extensive Commenting:** After debugging the AI-drafted code, I added detailed comments manually throughout the code to clarify each part and fully understand how everything functioned. This step was essential for improving readability and helping me keep track of the overall logic.
 
+- **Query Refinement for Costume Suggestions:** Initially, the costume queries generated with AI were overly broad (e.g., "cloudy," "sunny," "rainy"), resulting in similar images for different cities, even if the weather varied significantly. I used AI to help refine the query logic to introduce more specific terms and diversify the images generated. Despite these efforts, the improvements were limited, and diversifying the images for distinct weather scenarios remains a challenge.
